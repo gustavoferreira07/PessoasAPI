@@ -32,7 +32,18 @@ namespace WebAPI.Controllers
         /// <returns></returns>
         public PessoaModel Get(int id)
         {
-            return pessoaBLL.GetById(id);
+            var item= pessoaBLL.GetById(id);
+            if (item == null)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("Não existe uma pessoa com o id = {0}", id)),
+                    ReasonPhrase = "Pessoa não encontrada",
+                    StatusCode = HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(resp);
+            }
+            return item;
         }
 
         // POST: api/Pessoa
@@ -40,9 +51,23 @@ namespace WebAPI.Controllers
         /// Metodo de Inserção de Pessoas
         /// </summary>
         /// <param name="pessoa"></param>
-        public void Post(PessoaModel pessoa)
+        public HttpStatusCode Post(PessoaModel pessoa)
         {
-            pessoaBLL.AddPessoa(pessoa);
+            try
+            {
+                pessoaBLL.AddPessoa(pessoa);
+                return HttpStatusCode.OK;
+            }
+            catch (Exception ex)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format(ex.Message)),
+                    ReasonPhrase = "Erro ao salvar Pessoa",
+                    StatusCode = HttpStatusCode.BadRequest
+                };
+                throw new HttpResponseException(resp);
+            }           
         }
 
         // PUT: api/Pessoa/5
@@ -52,7 +77,22 @@ namespace WebAPI.Controllers
         /// <param name="pessoa"></param>
         public void Put( PessoaModel pessoa)
         {
-            pessoaBLL.Update(pessoa);
+           
+            var item = pessoaBLL.GetById(pessoa.Id);
+            if (item == null)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("Não existe uma pessoa com o id = {0}", pessoa.Id)),
+                    ReasonPhrase = "Pessoa não encontrada",
+                    StatusCode = HttpStatusCode.NotFound                    
+                };
+                throw new HttpResponseException(resp);
+            }
+            else
+            {
+                pessoaBLL.Update(pessoa);
+            }           
         }
 
         // DELETE: api/Pessoa/5

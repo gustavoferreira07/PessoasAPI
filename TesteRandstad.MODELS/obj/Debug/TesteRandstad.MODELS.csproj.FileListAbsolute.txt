@@ -3,4 +3,3 @@ C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.MOD
 C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.MODELS\obj\Debug\TesteRandstad.MODELS.csproj.CoreCompileInputs.cache
 C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.MODELS\obj\Debug\TesteRandstad.MODELS.dll
 C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.MODELS\obj\Debug\TesteRandstad.MODELS.pdb
-C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.MODELS\obj\Debug\TesteRandstad.MODELS.csprojAssemblyReference.cache

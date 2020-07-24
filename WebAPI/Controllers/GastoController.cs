@@ -31,8 +31,19 @@ namespace WebAPI.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         public GastoModel Get(int id)
-        {
-            return gastoBLL.GetById(id);
+        {            
+            var item = gastoBLL.GetById(id);
+            if (item == null)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("Não existe um Gasto com o id = {0}", id)),
+                    ReasonPhrase = "Gasto não encontrado",
+                    StatusCode = HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(resp);
+            }
+            return item;
         }
 
         // POST: api/Gasto
@@ -47,9 +58,15 @@ namespace WebAPI.Controllers
                 gastoBLL.AddGasto(gasto);
                 return HttpStatusCode.OK;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return HttpStatusCode.BadRequest;               
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format(ex.Message)),
+                    ReasonPhrase = "Gasto não encontrado",
+                    StatusCode = HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(resp);
             }
             
         }
@@ -61,7 +78,22 @@ namespace WebAPI.Controllers
         /// <param name="gasto"></param>
         public void Put(GastoModel gasto)
         {
-            gastoBLL.Update(gasto);
+           
+            var item = gastoBLL.GetById(gasto.Id);
+            if (item == null)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("Não existe um Gasto com o id = {0}", gasto.Id)),
+                    ReasonPhrase = "Gasto não encontrado",
+                    StatusCode = HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(resp);
+            }
+            else
+            {
+                gastoBLL.Update(gasto);
+            }
         }
 
         // DELETE: api/Gasto/5
@@ -71,7 +103,22 @@ namespace WebAPI.Controllers
         /// <param name="id"></param>
         public void Delete(int id)
         {
-            gastoBLL.Delete(id);
+           
+            var item = gastoBLL.GetById(id);
+            if (item == null)
+            {
+                var resp = new HttpResponseMessage(HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent(string.Format("Não existe um Gasto com o id = {0}", id)),
+                    ReasonPhrase = "Gasto não encontrado",
+                    StatusCode = HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(resp);
+            }
+            else
+            {
+                gastoBLL.Delete(id);
+            }
         }
     }
 }
