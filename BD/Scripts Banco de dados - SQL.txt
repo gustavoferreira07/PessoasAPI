@@ -1,0 +1,49 @@
+SCRIPT CREATE DATABASE + TABELAS
+-------------------------------------------------------------
+create database CrudPessoas;
+
+CREATE TABLE PessoaModel(
+	Id int IDENTITY NOT NULL primary key,
+	Nome varchar(150) NOT NULL,
+	CPF varchar(100) NOT NULL,
+	Idade int NOT NULL,	
+)
+
+CREATE TABLE GastoModel(
+	Id int IDENTITY NOT NULL primary key,
+	Descricao varchar(100) NOT NULL,
+	Valor float NOT NULL,
+	idPessoa int NOT NULL,
+    CONSTRAINT FK_PessoaID FOREIGN KEY (idPessoa) 
+    REFERENCES PessoaModel(Id)
+)
+
+--------------------------------------------------------------
+
+SCRIPT CREATE PROCEDURES DE BUSCA
+
+create procedure GetGastoProcedure   
+as   
+select * from gastoModel  
+go;
+
+
+create procedure GetPessoasProcedure   
+as   
+select * from PessoaModel  
+go;
+
+-----------------------------------------------------------------
+
+SCRIPT PROCEDURE COM RETORNO DE DADOS RELACIONADOR(RETORNA A PESSOA COM MAIOR GASTO-somatório)
+
+create procedure Proc.PessoaMaiorGasto
+as
+
+select sel.nome from (select pessoa.Nome, sum(gasto.Valor) as valor from PessoaModel pessoa 
+inner join GastoModel gasto on pessoa.Id = gasto.IdPessoa 
+group by pessoa.nome) sel where sel.valor = (select MAX(valor) from(select pessoa.Nome, sum(gasto.Valor) as valor from PessoaModel pessoa inner join GastoModel gasto on pessoa.Id = gasto.IdPessoa group by pessoa.nome) ret)
+
+go;
+
+-----------------------------------------------------------------
