@@ -1,0 +1,14 @@
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\TesteRandstad.DAO.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\TesteRandstad.DAO.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\EntityFramework.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\TesteRandstad.MODELS.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\TesteRandstad.MODELS.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\EntityFramework.xml
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\obj\Debug\TesteRandstad.DAO.csprojAssemblyReference.cache
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\obj\Debug\TesteRandstad.DAO.csproj.CoreCompileInputs.cache
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\obj\Debug\TesteRandstad.DAO.csproj.CopyComplete
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\obj\Debug\TesteRandstad.DAO.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\obj\Debug\TesteRandstad.DAO.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.DAO\bin\Debug\TesteRandstad.DAO.dll.config

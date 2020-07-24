@@ -1,0 +1,14 @@
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\obj\Debug\TesteRandstad.BLL.csprojAssemblyReference.cache
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\obj\Debug\TesteRandstad.BLL.csproj.CoreCompileInputs.cache
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.BLL.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.BLL.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.DAO.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.MODELS.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\EntityFramework.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.DAO.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.MODELS.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\EntityFramework.xml
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\obj\Debug\TesteRandstad.BLL.csproj.CopyComplete
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\obj\Debug\TesteRandstad.BLL.dll
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\obj\Debug\TesteRandstad.BLL.pdb
+C:\Users\gugag\OneDrive\Área de Trabalho\ProjetoTesteRandstad\TesteRandstad.BLL\bin\Debug\TesteRandstad.DAO.dll.config
